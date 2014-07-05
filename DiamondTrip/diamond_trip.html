@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Battleship</title>
+<style>
+html, body {
+    height: 100%;
+}
+
+body{
+
+vertical-align: middle;
+}
+
+div#board{
+position: relative;
+width: 1024px;
+height: 863px;
+margin: auto;
+}
+
+table{
+border:1px solid cyan;
+border-collapse:collapse;
+position: absolute;
+left: 40px;
+top: 40px;
+}
+
+td{
+    width:100px;
+    height:80px;
+    border:1px solid cyan;
+    border-collapse:collapse;
+    color: #013ADF;
+    text-align:center; 
+    vertical-align:middle;
+}
+
+form{
+position: absolute;
+float: left;
+bottom: 300px;
+left: 40px;
+padding: 6px;
+background-color: rgb(204, 245, 255);
+}
+
+form input{
+background-color: rgb(204, 255, 255);
+border-color: rgb(102, 102, 255);
+font-size: 2em;
+}
+
+div#messageArea{
+position: absolute;
+top: 0px;
+left: 0px;
+color: rgb(83, 175, 19);
+}
+
+.hit{
+background-color: yellow;
+border:1px solid cyan;
+}
+
+.miss{
+background-color: #4DF080;
+border:1px solid cyan;
+}
+</style>
+</head>
+
+<body>
+<div style="width:600px; margin:0 auto;">
+<div id="board">
+<div id="messageArea"></div>
+<div>
+<table>
+<tr>
+<td id="00">A0</td> <td id="01">A1</td><td id="02">A2</td> <td id="03">A3</td> 
+<td id="04">A4</td> 
+</tr>
+<tr>
+<td id="10">B0</td> <td id="11">B1</td><td id="12">B2</td> <td id="13">B3</td> 
+<td id="14">B4</td> 
+</tr>
+<tr>
+<td id="20">C0</td> <td id="21">C1</td><td id="22">C2</td> <td id="23">C3</td> 
+<td id="24">C4</td> 
+</tr>
+<tr>
+<td id="30">D0</td> <td id="31">D1</td><td id="32">D2</td> <td id="33">D3</td> 
+<td id="34">D4</td> 
+</tr>
+<tr>
+<td id="40">E0</td> <td id="41">E1</td><td id="42">E2</td> <td id="43">E3</td> 
+<td id="44">E4</td> 
+</tr>
+</table>
+
+<form>
+<input type="test" id="guessInput" placeholder="A0">
+<input type="button" id="fireButton" value="Fire!">
+</form>
+</div>
+</div>
+</div>
+<script src="dmd_trip.js">
+
+
+</script>
+
+</body>
+</html>
